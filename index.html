@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kharcha.ai</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="top">
+          <h3>Kharcha.ai</h3>
+        </div>
+        <div class="middle">
+          <h4>Dashboard</h4>
+          <h4>Expenses</h4>
+          <h4>Reports</h4>
+          <h4>Settings</h4>
+        </div>
+        <div class="bottom">
+          <h4>Your Account</h4>
+        </div>
+      </div>
+      <div class="body">
+        <div class="heading">
+          <h2>DASHBOARD</h2>
+          <input type="date" />
+        </div>
+        <div class="smallcard">
+          <div class="scard">
+            <h5>Total Spent</h5>
+            <h2 id="total-spent">0</h2>
+            <h5 id="total-note">0 expenses</h5>
+          </div>
+          <div class="scard">
+            <h5>This Week</h5>
+            <h2 id="week-spent">0</h2>
+            <h5 id="week-note">0 per day</h5>
+          </div>
+          <div class="scard">
+            <h5>Top Category</h5>
+            <h2 id="top-category">-</h2>
+            <h5 id="top-note">No expenses yet</h5>
+          </div>
+        </div>
+        <div class="bigcard">
+          <div class="chart">
+            <div class="bar-row">
+              <span>Food</span>
+              <div class="bar"><div class="fill" style="width: 36%"></div></div>
+              <span>₹1,450</span>
+              <span>Travel</span>
+              <div class="bar"><div class="fill" style="width: 66%"></div></div>
+              <span>₹2,450</span>
+              <span>Stationary</span>
+              <div class="bar"><div class="fill" style="width: 6%"></div></div>
+              <span>₹150</span>
+            </div>
+          </div>
+          <div class="expensecal">
+            <h3>Add Expense</h3>
+            <div class="desc">
+              <label for="text">Description</label>
+              <input
+                type="text"
+                id="desc-input"
+                placeholder="e.g Samosa and chai"
+              />
+            </div>
+            <div class="amt-dt">
+              <div class="amt">
+                <label for="text">Amount</label>
+                <input type="text" id="amount-input" placeholder="$0" />
+              </div>
+              <div class="date">
+                <label for="text">Date</label>
+                <input type="date" id="date-input" />
+              </div>
+            </div>
+            <div class="cat">
+              <select id="category-input">
+                <option>Food</option>
+                <option>Stationary</option>
+                <option>Subscritptions</option>
+                <option>Clothings</option>
+                <option>Travel</option>
+                <option>EMI's</option>
+                <option>Electronics</option>
+              </select>
+            </div>
+            <div class="button">
+              <button id="add-btn">+ Add Expense</button>
+            </div>
+          </div>
+        </div>
+        <div class="fullcard">
+          <div class="fcard">
+            <h4>Recent Expenses</h4>
+            <table>
+              <thead>
+                <tr>
+                  <td>Date</td>
+                  <td>Description</td>
+                  <td>Category</td>
+                  <td>Amount</td>
+                  <td></td>
+                </tr>
+              </thead>
+              <tbody id="expense-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

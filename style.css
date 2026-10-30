@@ -1,0 +1,226 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #0b1220;
+}
+.sidebar {
+  height: 100vh;
+  width: 30%;
+  background-color: #0e1626;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.sidebar .top h3 {
+  padding: 15px;
+  color: rgba(255, 255, 255, 0.883);
+}
+.sidebar .middle {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px;
+}
+.middle h4 {
+  color: rgba(211, 209, 209, 0.723);
+}
+
+.sidebar .bottom h4 {
+  color: white;
+  position: relative;
+  left: 40px;
+  top: 215px;
+}
+.body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.body .heading {
+  display: flex;
+  flex-direction: row;
+  gap: 80%;
+  padding-left: 15px;
+  padding-top: 15px;
+  font-size: 15px;
+}
+.heading h2,
+input {
+  color: white;
+  height: 20px;
+  width: 50px;
+}
+.body .smallcard {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  height: 15%;
+  width: 100%;
+  padding-left: 15px;
+}
+.smallcard .scard {
+  height: 100%;
+  width: 29.5%;
+  background-color: #131c2e;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5px;
+  font-size: 12px;
+}
+.smallcard .scard h5,
+h2 {
+  color: white;
+}
+.body .bigcard {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding-left: 15px;
+  height: 35%;
+  width: 100%;
+}
+.bigcard .chart {
+  height: 100%;
+  width: 55%;
+  background-color: #131c2e;
+  border-radius: 7px;
+}
+.bigcard .expensecal {
+  height: 100%;
+  width: 35%;
+  background-color: #131c2e;
+  border-radius: 7px;
+  font-size: 12px;
+}
+
+.expensecal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 10px;
+}
+.expensecal .desc {
+  display: flex;
+  flex-direction: column;
+}
+.expensecal h3 {
+  color: white;
+}
+.desc input {
+  width: 80%;
+  padding-left: 4px;
+  color: #0b1220;
+}
+
+.amt-dt {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+}
+.amt-dt input {
+  width: 62%;
+  color: #0b1220;
+}
+
+.amt,
+.date {
+  display: flex;
+  flex-direction: column;
+}
+.date,
+.amt,
+.desc label {
+  color: white;
+}
+.cat select {
+  border-radius: 3px;
+  width: 80%;
+  padding-left: 4px;
+}
+
+.button {
+  padding-left: 2px;
+}
+.button button {
+  padding: 1px;
+  border-radius: 5px;
+  background: #8fb4e3;
+  color: #0b1220;
+  width: 80%;
+}
+
+.fullcard {
+  height: 35%;
+  width: 100%;
+  padding-left: 15px;
+}
+.fullcard .fcard {
+  height: 100%;
+  width: 92%;
+  background-color: #131c2e;
+  border-radius: 7px;
+}
+.fullcard .fcard h4 {
+  color: white;
+  padding-left: 10px;
+}
+
+.fullcard .fcard table {
+  color: white;
+  border: 1px solid white;
+  border: none;
+  border-collapse: collapse;
+}
+
+.fullcard .fcard table th,
+.fullcard .fcard table td {
+  padding-left: 11px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  padding-right: 50px;
+  font-size: 15px;
+}
+
+.bigcard .chart {
+  color: white;
+}
+.bar-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.bar {
+  flex: 1;
+  height: 12px;
+  background: #0e1626;
+  border-radius: 6px;
+}
+.fill {
+  height: 12px;
+  background: #8fb4e3;
+  border-radius: 6px;
+}
+
+.delete-btn {
+  background: transparent;
+  color: #93a1b7;
+  border: 1px solid #263450;
+  border-radius: 5px;
+  padding: 2px 8px;
+  cursor: pointer;
+}
+.delete-btn:hover {
+  color: #e6ecf5;
+  border-color: #8fb4e3;
+}
